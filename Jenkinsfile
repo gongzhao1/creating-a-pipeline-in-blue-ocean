@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'export NODE_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/'
         sh 'npm install'
       }
     }
